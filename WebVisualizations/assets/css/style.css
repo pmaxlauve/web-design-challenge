@@ -11,7 +11,7 @@
     font-size: 40px;
     font-weight: 600;
     padding:10px;
-    text-align:"center";
+    text-align:center;
 
 }
 
@@ -19,7 +19,7 @@
     color:teal;
     font-size: 20px;
     font-weight: 600;
-    text-align:"center";
+    text-align:center;
 }
 
 .p1 {
@@ -37,7 +37,7 @@
     width: 600px;
     height: 400px;
     padding: 20px;
-    text-align:"center";
+    text-align:center;
 }
 
 .img2 {
@@ -95,7 +95,7 @@
         font-size: 20px;
         font-weight: 600;
         padding:10px;
-        text-align:"center";
+        text-align:center;
     }
 }
 
