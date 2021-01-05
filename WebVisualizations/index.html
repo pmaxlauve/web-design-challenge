@@ -4,47 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body style="background-color:whitesmoke">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="visualizations/maxt.html">Max Temp</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="visualizations/cloudiness.html">Cloudiness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visualizations/humidity.html">Humidity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visualizations/wind.html">Wind Speed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8 col-sm-12">
+                  <div class="box">
+                      <header class="h1">Summary: Latitude vs. X</header>
+                      <hr class="hr1">
+                      <img src="Resources/images/latVmaxt.png" align="left" class="img2">
+                      <p class="p1">The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                      <p class="p1">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <div class="box">
+                      <header class="h1">
+                          Visualizations
+                      </header>
+                      <hr class="hr1">
+                      <div class="container">
+                          <div class="row">
+                            <div class="col-sm-3 col-md-6">
+                                <a href="visualizations/maxt.html"> <img src="Resources/images/latVmaxt.png" class="img3"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <a href="visualizations/cloudiness.html"> <img src="Resources/images/latVcloud.png" class="img3"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <a href="visualizations/humidity.html"> <img src="Resources/images/latVhum.png" class="img3"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-6">
+                                <a href="visualizations/wind.html"> <img src="Resources/images/latVws.png" class="img3"></a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
    
 </body>
 </html>
